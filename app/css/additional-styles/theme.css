@@ -11,6 +11,10 @@ html {
     @apply ring-0;
 }
 
+.light{
+    font-weight: 200;
+}
+
 /* Hamburger button */
 .hamburger svg>*:nth-child(1),
 .hamburger svg>*:nth-child(2),

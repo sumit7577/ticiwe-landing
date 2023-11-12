@@ -29,16 +29,11 @@ export default function Hero() {
 
           {/* Section header */}
           <div className="text-center pb-12 md:pb-16">
-            <h1 className="text-5xl md:text-6xl font-extrabold leading-tighter tracking-tighter mb-4" data-aos="zoom-y-out">Make your website <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-teal-400">wonderful</span></h1>
-            <div className="max-w-3xl mx-auto">
-              <p className="text-xl text-gray-600 mb-8" data-aos="zoom-y-out" data-aos-delay="150">Our landing page template works on all devices, so you only have to set it up once, and get beautiful results forever.</p>
-              <div className="max-w-xs mx-auto sm:max-w-none sm:flex sm:justify-center" data-aos="zoom-y-out" data-aos-delay="300">
-                <div>
-                  <a className="btn text-white bg-blue-600 hover:bg-blue-700 w-full mb-4 sm:w-auto sm:mb-0" href="#0">Start free trial</a>
-                </div>
-                <div>
-                  <a className="btn text-white bg-gray-900 hover:bg-gray-800 w-full sm:w-auto sm:ml-4" href="#0">Learn more</a>
-                </div>
+            <h1 className="text-5xl md:text-5xl font-black leading-tighter tracking-tighter mb-4" data-aos="zoom-y-out">Unlock The Power Of Maps</h1>
+            <div className="mx-auto">
+              <p className="text-5xl md:text-5xl font-extralight text-black-800 mb-8 light" data-aos="zoom-y-out" data-aos-delay="150">Discover, Explore, and Create on <span className='font-black text-5xl md:text-5xl bg-clip-text text-transparent bg-black'>Ticiwe</span></p>
+              <div className="max-w-sm mx-auto sm:max-w-none sm:flex sm:justify-center" data-aos="zoom-y-out" data-aos-delay="300">
+                <a className="btn text-white bg-main-100 hover:bg-violet-900 w-full mb-4 sm:w-auto sm:mb-0 rounded-full" href="#0">Get Started</a>
               </div>
             </div>
           </div>
@@ -48,10 +43,7 @@ export default function Hero() {
             thumb={VideoThumb}
             thumbWidth={768}
             thumbHeight={432}
-            thumbAlt="Modal video thumbnail"
-            video="/videos/video.mp4"
-            videoWidth={1920}
-            videoHeight={1080} />
+            thumbAlt="Modal video thumbnail" />
 
         </div>
 

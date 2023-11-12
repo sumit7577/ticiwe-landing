@@ -5,8 +5,8 @@ import Image from 'next/image'
 import FeaturesBg from '@/public/images/features-bg.png'
 import FeaturesElement from '@/public/images/features-element.png'
 
-export default function Features() {
 
+export default function Make() {
   const [tab, setTab] = useState<number>(1)
 
   const tabs = useRef<HTMLDivElement>(null)
@@ -18,7 +18,6 @@ export default function Features() {
   useEffect(() => {
     heightFix()
   }, [])
-
   return (
     <section className="relative">
 
@@ -29,6 +28,8 @@ export default function Features() {
       <div className="relative max-w-6xl mx-auto px-4 sm:px-6">
         <div className="pt-12 md:pt-20">
 
+
+
           {/* Section header */}
           <div className="max-w-3xl flex justify-center align-middle mx-auto text-center pb-12 md:pb-16">
             <h1 className="h2 mb-4 text-sm">how it works</h1>
@@ -38,23 +39,8 @@ export default function Features() {
           {/* Section content */}
           <div className="md:grid md:grid-cols-12 md:gap-6">
 
-            {/* Content */}
-            <div className="max-w-xl md:max-w-none md:w-full mx-auto md:col-span-7 lg:col-span-6 md:mt-6" data-aos="fade-right">
-              <div className="md:pr-4 lg:pr-12 xl:pr-16 mb-6">
-                <h3 className="h3 mb-2 font-black text-main-100 text-5xl">Explore</h3>
-                <p className="text-main-100 text-2xl font-light">Data on a Map</p>
-              </div>
-
-              <div className="mb-8 md:mb-0">
-                <p className='font-medium text-lg bg-clip-text text-transparent bg-black '>
-                  Welcome to our data mapping tool, where you can bring your data to life. Upload an Excel file with your data, and in just a few steps, you'll see your data represented on an interactive map.
-                  Explore the data, track trends, and gain a geographic perspective on your information. Whether you have business data to analyze, points of interest to visualize, or any other mapping need, our tool will allow you to do so intuitively and engagingly.
-                </p>
-              </div>
-            </div>
-
             {/* Tabs items */}
-            <div className="max-w-xl md:max-w-none md:w-full mx-auto md:col-span-5 lg:col-span-6 mb-8 md:mb-0 md:order-1">
+            <div className="max-w-xl md:max-w-none md:w-full mx-auto md:col-span-5 lg:col-span-6 mb-8 md:mb-0 md:order-0">
               <div className="transition-all">
                 <div className="relative flex flex-col text-center lg:text-right" data-aos="zoom-y-out" ref={tabs}>
                   <div className="relative inline-flex flex-col">
@@ -64,6 +50,24 @@ export default function Features() {
                 </div>
               </div>
             </div>
+
+            {/* Content */}
+            <div className="max-w-xl md:max-w-none md:w-full mx-auto md:col-span-7 lg:col-span-6 md:mt-6" data-aos="fade-right">
+              <div className="md:pr-4 lg:pr-12 xl:pr-16 mb-6">
+                <h3 className="h3 mb-2 font-black text-main-100 text-5xl">Make</h3>
+                <p className="text-main-100 text-2xl font-light">Custom points of interest</p>
+              </div>
+
+              <div className="mb-8 md:mb-0">
+                <p className='font-medium text-lg bg-clip-text text-transparent bg-black '>
+                  Unleash your creativity and make the map truly your own by adding custom points of interest.
+                  Our platform allows you to import and manage your unique points with ease.
+                  Use Excel or other data sources to bring your ideas to life and customize the map according to your specific needs.
+                </p>
+              </div>
+            </div>
+
+
 
           </div>
 

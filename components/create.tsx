@@ -5,8 +5,7 @@ import Image from 'next/image'
 import FeaturesBg from '@/public/images/features-bg.png'
 import FeaturesElement from '@/public/images/features-element.png'
 
-export default function Features() {
-
+export default function Create() {
   const [tab, setTab] = useState<number>(1)
 
   const tabs = useRef<HTMLDivElement>(null)
@@ -18,7 +17,6 @@ export default function Features() {
   useEffect(() => {
     heightFix()
   }, [])
-
   return (
     <section className="relative">
 
@@ -41,14 +39,14 @@ export default function Features() {
             {/* Content */}
             <div className="max-w-xl md:max-w-none md:w-full mx-auto md:col-span-7 lg:col-span-6 md:mt-6" data-aos="fade-right">
               <div className="md:pr-4 lg:pr-12 xl:pr-16 mb-6">
-                <h3 className="h3 mb-2 font-black text-main-100 text-5xl">Explore</h3>
-                <p className="text-main-100 text-2xl font-light">Data on a Map</p>
+                <h3 className="h3 mb-2 font-black text-main-100 text-5xl">Co-Create</h3>
+                <p className="text-main-100 text-2xl font-light">In one space</p>
               </div>
 
               <div className="mb-8 md:mb-0">
                 <p className='font-medium text-lg bg-clip-text text-transparent bg-black '>
-                  Welcome to our data mapping tool, where you can bring your data to life. Upload an Excel file with your data, and in just a few steps, you'll see your data represented on an interactive map.
-                  Explore the data, track trends, and gain a geographic perspective on your information. Whether you have business data to analyze, points of interest to visualize, or any other mapping need, our tool will allow you to do so intuitively and engagingly.
+                  Whether you're a curious individual, a professional user, or part of a larger organization, Ticiwe empowers you to harness the power of maps and unleash your creativity and vision.
+                  Discover endless possibilities as you map your data, whether it's for research, planning, or simply for the love of exploration.
                 </p>
               </div>
             </div>
