@@ -105,7 +105,7 @@ export default function Access() {
             {/* content */}
             <div className="max-w-xl md:max-w-none md:w-full mx-auto md:col-span-7 lg:col-span-6 md:mt-6" data-aos="fade-right">
 
-              <div className="mb-8 md:mb-8 flex justify-between rounded-full bg-gray-200 md:max-w-sm max-h-14">
+              <div className="mb-8 md:mb-8 flex justify-between px-4 py-0 justify-items-center rounded-full bg-gray-200 md:max-w-sm">
                 <a
                   className={`flex items-center text-lg px-2.5 rounded-full border transition duration-300 ease-in-out mb-3 ${tab !== 1 ? 'bg-gray-200 border-transparent' : 'bg-white shadow-md border-gray-200 hover:shadow-lg'}`}
                   href="#0"
