@@ -22,15 +22,14 @@ export default function Create() {
 
       {/* Section background (needs .relative class on parent and next sibling elements) */}
       <div className="absolute inset-0 bg-gray-100 pointer-events-none mb-16" aria-hidden="true"></div>
-      <div className="absolute left-0 right-0 m-auto w-px p-px h-20 bg-gray-200 transform -translate-y-1/2"></div>
 
-      <div className="relative max-w-6xl mx-auto px-4 sm:px-6">
+      <div className="relative max-w-7xl mx-auto px-4 sm:px-6">
         <div className="pt-12 md:pt-20">
 
           {/* Section header */}
-          <div className="max-w-3xl flex justify-center align-middle mx-auto text-center pb-12 md:pb-16">
-            <h1 className="h2 mb-4 text-sm">how it works</h1>
-
+          <div className="max-w-full flex items-center mx-auto pb-12 md:pb-16">
+            <h1 className="h2 font-medium text-gray-300 text-base mr-5">Share</h1>
+            <span className="w-11/12 p-0.5 bg-gray-200"></span>
           </div>
 
           {/* Section content */}
@@ -63,6 +62,21 @@ export default function Create() {
               </div>
             </div>
 
+          </div>
+
+          {/*purchase modal */}
+          <div className='bg-gray-200 rounded-full grid grid-cols-12 items-center p-4'>
+            <div className='col-span-3 font-normal text-base text-gray-400'>
+              Check out our subscription plans
+            </div>
+            <div className='col-span-7 flex gap-3'>
+              <div className='font-bold text-base border-r-2 border-gray-300 pr-1'>Basic</div>
+              <div className='font-bold text-base border-r-2 border-gray-300 pr-1'>Pro</div>
+              <div className='font-bold text-base '>Enterprise</div>
+            </div>
+            <div className='col-span-2 text-center'>
+              <div className='rounded-full text-white font-bold bg-blue-900 py-3 text-base'>Explore Price</div>
+            </div>
           </div>
 
         </div>

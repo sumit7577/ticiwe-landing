@@ -24,15 +24,15 @@ export default function Access() {
 
       {/* Section background (needs .relative class on parent and next sibling elements) */}
       <div className="absolute inset-0 bg-gray-100 pointer-events-none mb-16" aria-hidden="true"></div>
-      <div className="absolute left-0 right-0 m-auto w-px p-px h-20 bg-gray-200 transform -translate-y-1/2"></div>
+      
 
-      <div className="relative max-w-6xl mx-auto px-4 sm:px-6">
+      <div className="relative max-w-7xl mx-auto px-4 sm:px-6">
         <div className="pt-12 md:pt-20">
 
           {/* Section header */}
-          <div className="max-w-3xl flex justify-center align-middle mx-auto text-center pb-12 md:pb-16">
-            <h1 className="h2 mb-4 text-sm">how it works</h1>
-
+          <div className="max-w-full flex items-center mx-auto pb-12 md:pb-16">
+            <h1 className="h2 font-medium text-gray-300 text-base mr-5">Visura</h1>
+            <span className="w-11/12 p-0.5 bg-gray-200"></span>
           </div>
 
           {/* Section content */}
@@ -105,37 +105,27 @@ export default function Access() {
             {/* content */}
             <div className="max-w-xl md:max-w-none md:w-full mx-auto md:col-span-7 lg:col-span-6 md:mt-6" data-aos="fade-right">
 
-              <div className="mb-8 md:mb-8 flex justify-between px-4 py-0 justify-items-center rounded-full bg-gray-200 md:max-w-sm">
-                <a
-                  className={`flex items-center text-lg px-2.5 rounded-full border transition duration-300 ease-in-out mb-3 ${tab !== 1 ? 'bg-gray-200 border-transparent' : 'bg-white shadow-md border-gray-200 hover:shadow-lg'}`}
-                  href="#0"
-                  onClick={(e) => { e.preventDefault(); setTab(1); }}
-                >
-                  <div>
-                    <div className="font-bold leading-snug tracking-tight mb-1">Import</div>
+              <div className='flex justify-between items-center mb-8 md:mb-8 bg-gray-200 md:max-w-xs p-1 rounded-full'>
+                <div onClick={(e) => { e.preventDefault(); setTab(1); }}
+                  className={`text-lg px-4 py-1.5 items-center flex rounded-full border transition duration-300 ease-in-out ${tab !== 1 ? 'bg-gray-200 border-transparent' : 'bg-white shadow-md border-gray-200 hover:shadow-lg'}`}>
+                  <div className="font-bold leading-snug tracking-tight mb-1">
+                    Import
                   </div>
-                </a>
-                <a
-                  className={`flex items-center text-lg p-5 rounded-full border transition duration-300 ease-in-out mb-3 ${tab !== 2 ? 'bg-gray-200 border-transparent' : 'bg-white shadow-md border-gray-200 hover:shadow-lg'}`}
-                  href="#0"
-                  onClick={(e) => { e.preventDefault(); setTab(2); }}
-                >
-                  <div>
-                    <div className="font-bold leading-snug tracking-tight mb-1">Produce</div>
+                </div>
 
+                <div onClick={(e) => { e.preventDefault(); setTab(2); }}
+                  className={`text-lg px-4 py-1.5 items-center flex rounded-full border transition duration-300 ease-in-out ${tab !== 2 ? 'bg-gray-200 border-transparent' : 'bg-white shadow-md border-gray-200 hover:shadow-lg'}`}>
+                  <div className="font-bold leading-snug tracking-tight mb-1">
+                    Produce
                   </div>
+                </div>
 
-                </a>
-                <a
-                  className={`flex items-center text-lg p-5 rounded-full border transition duration-300 ease-in-out mb-3 ${tab !== 3 ? 'bg-gray-200 border-transparent' : 'bg-white shadow-md border-gray-200 hover:shadow-lg'}`}
-                  href="#0"
-                  onClick={(e) => { e.preventDefault(); setTab(3); }}
-                >
-                  <div>
-                    <div className="font-bold leading-snug tracking-tight mb-1">Finalize</div>
+                <div onClick={(e) => { e.preventDefault(); setTab(3); }}
+                  className={`text-lg px-4 py-1.5 items-center flex rounded-full border transition duration-300 ease-in-out ${tab !== 3 ? 'bg-gray-200 border-transparent' : 'bg-white shadow-md border-gray-200 hover:shadow-lg'}`}>
+                  <div className="font-bold leading-snug tracking-tight mb-1">
+                    Finalize
                   </div>
-
-                </a>
+                </div>
               </div>
 
               <div className="md:pr-4 lg:pr-12 xl:pr-16 mb-6">
