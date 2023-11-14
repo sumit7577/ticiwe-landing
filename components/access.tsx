@@ -24,22 +24,24 @@ export default function Access() {
 
       {/* Section background (needs .relative class on parent and next sibling elements) */}
       <div className="absolute inset-0 bg-gray-100 pointer-events-none mb-16" aria-hidden="true"></div>
-      
+
 
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6">
         <div className="pt-12 md:pt-20">
 
           {/* Section header */}
           <div className="max-w-full flex items-center mx-auto pb-12 md:pb-16">
-            <h1 className="h2 font-medium text-gray-300 text-base mr-5">Visura</h1>
+            <h1 className="h2 font-medium text-gray-300 text-base mr-5 font-sans">Visura</h1>
             <span className="w-11/12 p-0.5 bg-gray-200"></span>
           </div>
 
           {/* Section content */}
-          <div className="md:grid md:grid-cols-12 md:gap-6">
+          <div className="md:grid md:grid-cols-12 sm:gap-6 md:gap-20">
             {/* tab items */}
             <div className="max-w-xl md:max-w-none md:w-full mx-auto md:col-span-5 lg:col-span-6 mb-8 md:mb-0 md:order-0">
+              <h2 className='font-thin font-sans text-main-100 text-3xl relative bottom-10'>Access land ownership information</h2>
               <div className="transition-all">
+
                 <div className="relative flex flex-col text-center lg:text-right" data-aos="zoom-y-out" ref={tabs}>
                   {/* Item 1 */}
                   <Transition
@@ -107,22 +109,22 @@ export default function Access() {
 
               <div className='flex justify-between items-center mb-8 md:mb-8 bg-gray-200 md:max-w-xs p-1 rounded-full'>
                 <div onClick={(e) => { e.preventDefault(); setTab(1); }}
-                  className={`text-lg px-4 py-1.5 items-center flex rounded-full border transition duration-300 ease-in-out ${tab !== 1 ? 'bg-gray-200 border-transparent' : 'bg-white shadow-md border-gray-200 hover:shadow-lg'}`}>
-                  <div className="font-bold leading-snug tracking-tight mb-1">
+                  className={`text-lg px-4 py-1.5 items-center flex rounded-full border transition duration-300 ease-in-out ${tab !== 1 ? 'bg-gray-200 border-transparent font-medium' : 'bg-white shadow-md border-gray-200 hover:shadow-lg font-bold'}`}>
+                  <div className="font-sans leading-snug tracking-tight mb-1">
                     Import
                   </div>
                 </div>
 
                 <div onClick={(e) => { e.preventDefault(); setTab(2); }}
-                  className={`text-lg px-4 py-1.5 items-center flex rounded-full border transition duration-300 ease-in-out ${tab !== 2 ? 'bg-gray-200 border-transparent' : 'bg-white shadow-md border-gray-200 hover:shadow-lg'}`}>
-                  <div className="font-bold leading-snug tracking-tight mb-1">
+                  className={`text-lg px-4 py-1.5 items-center flex rounded-full border transition duration-300 ease-in-out ${tab !== 2 ? 'bg-gray-200 border-transparent font-medium' : 'bg-white shadow-md border-gray-200 hover:shadow-lg font-bold'}`}>
+                  <div className="font-sans leading-snug tracking-tight mb-1">
                     Produce
                   </div>
                 </div>
 
                 <div onClick={(e) => { e.preventDefault(); setTab(3); }}
-                  className={`text-lg px-4 py-1.5 items-center flex rounded-full border transition duration-300 ease-in-out ${tab !== 3 ? 'bg-gray-200 border-transparent' : 'bg-white shadow-md border-gray-200 hover:shadow-lg'}`}>
-                  <div className="font-bold leading-snug tracking-tight mb-1">
+                  className={`text-lg px-4 py-1.5 items-center flex rounded-full border transition duration-300 ease-in-out ${tab !== 3 ? 'bg-gray-200 border-transparent font-medium' : 'bg-white shadow-md border-gray-200 hover:shadow-lg font-bold'}`}>
+                  <div className="font-sans leading-snug tracking-tight mb-1">
                     Finalize
                   </div>
                 </div>
@@ -131,20 +133,20 @@ export default function Access() {
               <div className="md:pr-4 lg:pr-12 xl:pr-16 mb-6">
                 {tab === 1 && <>
                   <h3 className="h3 font-extrabold text-violet-700 text-3xl mb-10">01</h3>
-                  <p className="text-main-100 text-5xl font-black mb-10">Gain Access</p>
-                  <p className="text-black text-md font-light mb-8">to comprehensive cadastral maps from various countries.</p>
+                  <p className="text-main-100 text-5xl font-black mb-10 font-sans">Gain Access</p>
+                  <p className="text-black text-lg font-light mb-8 font-sans">to comprehensive cadastral maps from various countries.</p>
                 </>}
 
                 {tab === 2 && <>
                   <h3 className="h3 font-extrabold text-violet-700 text-3xl mb-10">02</h3>
-                  <p className="text-main-100 text-5xl font-black mb-10">Unlock Valuable</p>
-                  <p className="text-black text-md font-light mb-8">information about land ownership, property boundaries, and</p>
+                  <p className="text-main-100 text-5xl font-black mb-10 font-sans">Unlock Valuable</p>
+                  <p className="text-black text-lg font-light mb-8 font-sans">information about land ownership, property boundaries, and</p>
                 </>}
 
                 {tab === 3 && <>
                   <h3 className="h3 font-extrabold text-violet-700 text-3xl mb-10">03</h3>
-                  <p className="text-main-100 text-5xl font-black mb-10">Empower</p>
-                  <p className="text-black text-md font-light mb-8">your business decisions with accurate and up-to-date data.</p>
+                  <p className="text-main-100 text-5xl font-black mb-10 font-sans">Empower</p>
+                  <p className="text-black text-lg font-light mb-8 font-sans">your business decisions with accurate and up-to-date data.</p>
                 </>}
 
               </div>

@@ -18,6 +18,7 @@ module.exports = {
           700: '#4C4C4C',
           800: '#333333',
           900: '#191919',
+          50:"#EDEFF2"
         },
         blue: {
           100: '#E6F0FD',
@@ -68,7 +69,7 @@ module.exports = {
       fontSize: {
         xs: '0.75rem',
         sm: '0.875rem',
-        base: '1rem',
+        base: '1.050rem',
         lg: '1.125rem',
         xl: '1.25rem',
         '2xl': '1.5rem',

@@ -30,7 +30,7 @@ export default function Features() {
 
           {/* Section header */}
           <div className="max-w-full flex items-center mx-auto pb-12 md:pb-16">
-            <h1 className="h2 font-medium text-gray-300 text-base mr-5">How it works</h1>
+            <h1 className="h2 font-medium text-gray-300 text-base mr-5 font-sans">How it works</h1>
             <span className="w-10/12 p-0.5 bg-gray-200"></span>
           </div>
 
@@ -40,13 +40,15 @@ export default function Features() {
             {/* Content */}
             <div className="max-w-xl md:max-w-none md:w-full mx-auto md:col-span-7 lg:col-span-6 md:mt-6" data-aos="fade-right">
               <div className="md:pr-4 lg:pr-12 xl:pr-16 mb-6">
-                <h3 className="h3 mb-2 font-black text-main-100 text-5xl">Explore</h3>
-                <p className="text-main-100 text-2xl font-light">Data on a Map</p>
+                <h3 className="h3 mb-2 font-black text-main-100 text-5xl font-sans">Explore</h3>
+                <p className="text-main-100 text-2xl font-thin font-sans">Data on a Map</p>
               </div>
 
               <div className="mb-8 md:mb-0">
-                <p className='font-medium text-lg bg-clip-text text-transparent bg-black '>
+                <p className='font-medium font-sans text-lg text-black mb-8'>
                   Welcome to our data mapping tool, where you can bring your data to life. Upload an Excel file with your data, and in just a few steps, you'll see your data represented on an interactive map.
+                </p>
+                <p className="font-medium font-sans text-lg text-black">
                   Explore the data, track trends, and gain a geographic perspective on your information. Whether you have business data to analyze, points of interest to visualize, or any other mapping need, our tool will allow you to do so intuitively and engagingly.
                 </p>
               </div>

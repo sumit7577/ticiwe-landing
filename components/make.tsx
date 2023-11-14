@@ -4,6 +4,7 @@ import { useState, useRef, useEffect } from 'react'
 import Image from 'next/image'
 import FeaturesBg from '@/public/images/features-bg.png'
 import FeaturesElement from '@/public/images/features-element.png'
+import { HeroIcon } from './ui/hero-icon'
 
 
 export default function Make() {
@@ -31,7 +32,7 @@ export default function Make() {
 
           {/* Section header */}
           <div className="max-w-full flex items-center mx-auto pb-12 md:pb-16">
-            <h1 className="h2 font-medium text-gray-300 text-base mr-5">Finalize</h1>
+            <h1 className="h2 font-medium text-gray-300 text-base mr-5 font-sans">Finalize</h1>
             <span className="w-11/12 p-0.5 bg-gray-200"></span>
           </div>
 
@@ -53,14 +54,18 @@ export default function Make() {
             {/* Content */}
             <div className="max-w-xl md:max-w-none md:w-full mx-auto md:col-span-7 lg:col-span-6 md:mt-6" data-aos="fade-right">
               <div className="md:pr-4 lg:pr-12 xl:pr-16 mb-6">
-                <h3 className="h3 mb-2 font-black text-main-100 text-5xl">Make</h3>
-                <p className="text-main-100 text-2xl font-light">Custom points of interest</p>
+                <h3 className="h3 mb-2 font-black text-main-100 text-5xl font-sans">Make</h3>
+                <p className="text-main-100 text-3xl font-light font-sans">Custom points of interest</p>
               </div>
 
               <div className="mb-8 md:mb-0">
-                <p className='font-medium text-lg bg-clip-text text-transparent bg-black '>
+                <p className='font-normal font-sans text-lg text-black mb-4'>
                   Unleash your creativity and make the map truly your own by adding custom points of interest.
+                </p>
+                <p className='font-normal font-sans text-lg text-black mb-4'>
                   Our platform allows you to import and manage your unique points with ease.
+                </p>
+                <p className='font-normal font-sans text-lg text-black'>
                   Use Excel or other data sources to bring your ideas to life and customize the map according to your specific needs.
                 </p>
               </div>
@@ -69,6 +74,6 @@ export default function Make() {
 
         </div>
       </div>
-    </section>
+    </section >
   )
 }
