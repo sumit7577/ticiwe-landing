@@ -4,7 +4,7 @@ import Logo from './logo'
 export default function Footer() {
   return (
     <footer>
-      <div className="mx-auto px-4 sm:px-6  bg-gray-400">
+      <div className="mx-auto px-4 sm:px-6  bg-footer">
         <div className='flex items-center justify-center py-10'>
           <h1 className='font-sans font-normal text-4xl text-white'>Start exploring with <span className='font-bold'>Ticiwe</span></h1>
         </div>

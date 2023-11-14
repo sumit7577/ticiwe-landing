@@ -12,7 +12,7 @@ const inter = Inter({
 
 export const metadata = {
   title: 'Ticiwe',
-  description: 'Ticiwe landing page',
+  description: 'Ticiwe Homepage',
 }
 
 export default function RootLayout({
@@ -22,6 +22,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <link rel='icon' href="./favicon.png" />
       <body className={`${inter.variable} font-inter antialiased bg-white text-gray-900 tracking-tight`}>
         <div className="flex flex-col min-h-screen overflow-hidden supports-[overflow:clip]:overflow-clip">
           <Header />

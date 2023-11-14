@@ -71,7 +71,7 @@ export default function MobileMenu() {
               <Link href="/" className="font-bold hover:text-gray-900 px-5 py-3 flex items-center transition duration-150 ease-in-out">Visura</Link>
             </li>
             <li>
-              <Link href="/" className="font-bold hover:text-gray-900 px-5 py-3 flex items-center transition duration-150 ease-in-out">Pricing</Link>
+              <Link href="/price" className="font-bold hover:text-gray-900 px-5 py-3 flex items-center transition duration-150 ease-in-out">Pricing</Link>
             </li>
             <li>
               <Link href="/" className="font-bold hover:text-gray-900 px-5 py-3 flex items-center transition duration-150 ease-in-out">Share</Link>

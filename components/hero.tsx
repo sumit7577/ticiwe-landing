@@ -1,4 +1,4 @@
-import VideoThumb from '@/public/images/hero-image.png'
+import HeroThumb from '@/public/images/home.gif'
 import ModalVideo from '@/components/modal-video'
 
 export default function Hero() {
@@ -33,15 +33,15 @@ export default function Hero() {
             <div className="mx-auto">
               <p className="text-5xl md:text-5xl font-extralight text-black-800 mb-8 light" data-aos="zoom-y-out" data-aos-delay="150">Discover, Explore, and Create on <span className='font-black text-5xl md:text-5xl bg-clip-text text-transparent bg-black'>Ticiwe</span></p>
               <div className="max-w-sm mx-auto sm:max-w-none sm:flex sm:justify-center" data-aos="zoom-y-out" data-aos-delay="300">
-                <a className="btn text-white bg-main-100 hover:bg-violet-900 w-full mb-4 sm:w-auto sm:mb-0 rounded-full" href="#0">Get Started</a>
+                <a className="btn text-white bg-main-100 hover:bg-violet-900 w-full mb-4 sm:w-auto sm:mb-0 rounded-full" href="/signin">Get Started</a>
               </div>
             </div>
           </div>
 
           {/* Hero image */}
           <ModalVideo
-            thumb={VideoThumb}
-            thumbWidth={768}
+            thumb={HeroThumb}
+            thumbWidth={1000}
             thumbHeight={432}
             thumbAlt="Modal video thumbnail" />
 
