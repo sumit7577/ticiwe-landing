@@ -63,7 +63,7 @@ export default function Features() {
               <div className="transition-all">
                 <div className="relative flex flex-col text-center lg:text-right" data-aos="zoom-y-out" ref={tabs}>
                   <div className="relative inline-flex flex-col">
-                    <video width={500} ref={videoRef} height={462} loop>
+                    <video width={500} ref={videoRef} height={462} loop muted autoPlay>
                       <source src="/images/explore.mp4" type="video/mp4" />
                       Your browser does not support the video tag.
                     </video>
