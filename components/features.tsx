@@ -2,7 +2,6 @@
 
 import { useState, useRef, useEffect } from 'react'
 import Image from 'next/image'
-import FeaturesBg from '@/public/images/explore.gif'
 
 export default function Features() {
 
@@ -58,7 +57,10 @@ export default function Features() {
               <div className="transition-all">
                 <div className="relative flex flex-col text-center lg:text-right" data-aos="zoom-y-out" ref={tabs}>
                   <div className="relative inline-flex flex-col">
-                    <Image className="md:max-w-none mx-auto rounded" src={FeaturesBg} width={500} height="462" alt="Explore" />
+                    <video width={500} height={462} loop controls={false}>
+                      <source src="/images/explore.mp4" type="video/mp4" />
+                      Your browser does not support the video tag.
+                    </video>
                   </div>
                 </div>
               </div>
