@@ -8,6 +8,7 @@ export default function Features() {
   const [tab, setTab] = useState<number>(1)
 
   const tabs = useRef<HTMLDivElement>(null)
+  const videoRef = useRef<HTMLVideoElement>(null)
 
   const heightFix = () => {
     if (tabs.current && tabs.current.parentElement) tabs.current.parentElement.style.height = `${tabs.current.clientHeight}px`
@@ -15,6 +16,11 @@ export default function Features() {
 
   useEffect(() => {
     heightFix()
+    if(videoRef){
+      if(videoRef.current?.paused){
+        videoRef.current.play()
+      }
+    }
   }, [])
 
   return (
@@ -57,7 +63,7 @@ export default function Features() {
               <div className="transition-all">
                 <div className="relative flex flex-col text-center lg:text-right" data-aos="zoom-y-out" ref={tabs}>
                   <div className="relative inline-flex flex-col">
-                    <video width={500} height={462} loop controls={false}>
+                    <video width={500} ref={videoRef} height={462} loop>
                       <source src="/images/explore.mp4" type="video/mp4" />
                       Your browser does not support the video tag.
                     </video>
