@@ -2,8 +2,7 @@
 
 import { useState, useRef, useEffect } from 'react'
 import Image from 'next/image'
-import FeaturesBg from '@/public/images/features-bg.png'
-import FeaturesElement from '@/public/images/features-element.png'
+import FeaturesBg from '@/public/images/co-create.gif'
 
 export default function Create() {
   const [tab, setTab] = useState<number>(1)
@@ -57,8 +56,7 @@ export default function Create() {
               <div className="transition-all">
                 <div className="relative flex flex-col text-center lg:text-right" data-aos="zoom-y-out" ref={tabs}>
                   <div className="relative inline-flex flex-col">
-                    <Image className="md:max-w-none mx-auto rounded" src={FeaturesBg} width={500} height="462" alt="Features bg" />
-                    <Image className="md:max-w-none absolute w-full left-0 transform animate-float" src={FeaturesElement} width={500} height="44" alt="Element" style={{ top: '30%' }} />
+                    <Image className="md:max-w-none mx-auto rounded" src={FeaturesBg} width={500} height="462" alt="Co-Create" />
                   </div>
                 </div>
               </div>
@@ -67,7 +65,7 @@ export default function Create() {
           </div>
 
           {/*purchase modal */}
-          <div className='bg-gray-50 rounded-full md:grid md:grid-cols-12 items-center p-4 px-8'>
+          <div className='bg-gray-50 rounded-full md:grid md:grid-cols-12 items-center p-4 px-8 mt-10'>
             <div className='col-span-3 font-normal text-base font-sans text-gray-600 text-center'>
               Check out our subscription plans
             </div>
