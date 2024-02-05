@@ -5,7 +5,7 @@ import React, { useState } from "react"
 
 const plans = ["monthly", "anually"] as const;
 
-const Price = (): React.ReactNode => {
+export const Prices = (): React.ReactNode => {
     return (
         <div className="bg-gray-50 rounded-2xl p-8 flex flex-col lg:max-w-[28%] md:max-w-[45%] sm:max-w-[80%] hover:scale-110 hover:bg-main-100 transition ease-in-out duration-700 transform group shadow-xl">
             <div className="flex justify-between mb-4 items-center">
@@ -78,7 +78,7 @@ export default function Pricing() {
                     </div>
                     <div className="flex flex-wrap gap-10 w-full justify-between mb-12">
                         {Array.from("cha").map((item, index) => (
-                            <Price key={index} />
+                            <Prices key={index} />
                         ))}
 
                     </div>

@@ -1,6 +1,6 @@
 import React from 'react'
 import Image from "next/image";
-import FeaturesBg from '@/public/images/gain_access.gif'
+import FeaturesBg from '@/public/images/connect/communication.png'
 
 export default function Head() {
     return (
@@ -23,7 +23,7 @@ export default function Head() {
                     </div>
 
                     <div>
-                        <Image className="md:max-w-none mx-auto rounded" src={FeaturesBg} width={500} height="462" alt="Gain Access" />
+                        <Image className="md:max-w-none mx-auto rounded" src={FeaturesBg} width={500} height="462" alt="Header" />
                     </div>
 
                 </div>

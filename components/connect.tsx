@@ -4,6 +4,7 @@ import { useState, useRef, useEffect } from 'react'
 import Image from 'next/image'
 import FeaturesBg from '@/public/images/co-create.gif'
 import Link from 'next/link'
+import Connects from "@/public/images/connect/Connect.png"
 
 export default function Connect() {
     const [tab, setTab] = useState<number>(1)
@@ -54,7 +55,7 @@ export default function Connect() {
                             <div className="transition-all">
                                 <div className="relative flex flex-col text-center lg:text-right" data-aos="zoom-y-out" ref={tabs}>
                                     <div className="relative inline-flex flex-col">
-                                        <Image className="md:max-w-none mx-auto rounded" src={FeaturesBg} width={500} height="462" alt="Co-Create" />
+                                        <Image className="md:max-w-none mx-auto rounded" src={Connects} width={500} height="462" alt="Connect" />
                                     </div>
                                 </div>
                             </div>
