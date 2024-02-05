@@ -149,6 +149,25 @@ export default function Access() {
 
             </div>
 
+
+
+
+
+          </div>
+
+          {/*purchase modal */}
+          <div className='bg-gray-50 rounded-full md:grid md:grid-cols-12 items-center p-4 px-8 mt-10 bg-footer'>
+            <div className='col-span-3 font-normal text-base font-sans text-white text-center'>
+              Check out our subscription plans
+            </div>
+            <div className='col-span-7 flex gap-3'>
+              <div className='font-bold text-base border-r-2 border-gray-300 pr-1'>Basic</div>
+              <div className='font-bold text-base border-r-2 border-gray-300 pr-1'>Pro</div>
+              <div className='font-bold text-base '>Enterprise</div>
+            </div>
+            <div className='col-span-2 text-center gap-5'>
+              <div className='rounded-full text-white font-bold bg-main-100 py-3 px-2 text-sm font-sans'><a href="/price">Explore Price</a></div>
+            </div>
           </div>
 
         </div>

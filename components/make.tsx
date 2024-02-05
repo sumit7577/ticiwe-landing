@@ -21,8 +21,6 @@ export default function Make() {
   return (
     <section className="relative">
 
-      {/* Section background (needs .relative class on parent and next sibling elements) */}
-      <div className="absolute inset-0 bg-gray-100 pointer-events-none mb-16" aria-hidden="true"></div>
 
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 mb-16">
         <div className="pt-12 md:pt-20">

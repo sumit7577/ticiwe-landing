@@ -43,7 +43,7 @@ module.exports = {
           900: '#234E52',
         },
         main:{
-          100:"#3C24B2"
+          100:"#3D9ADE"
         }
       },
       backgroundImage: {
